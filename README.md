@@ -1,9 +1,9 @@
 # ECE513_cookie
 
 v2
-using <span> and <div> tags to give styling needed for futuree CSS
+using span and div tags to give styling needed for futuree CSS
   
-Add <div>, <span>, and other HTML tags to organize web page for styling  
+Add div, span, and other HTML tags to organize web page for styling  
 Add id's or classes to enable styling to be applied to the components needed
 Add special characters (entities) for:
  - Degrees (°) symbol 
