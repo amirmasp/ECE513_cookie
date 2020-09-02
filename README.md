@@ -1,6 +1,7 @@
 # ECE513_cookie
 
 v2
+To get the style like wireframe in the file 8/31: 
 using span and div tags to give styling needed for futuree CSS
   
 Add div, span, and other HTML tags to organize web page for styling  
