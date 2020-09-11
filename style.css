@@ -1,6 +1,7 @@
 html {
   font-family: Helvetica, sans-serif;
   font-size: 10pt;
+  width: 800px;
 }
 
 h1, h2 {
@@ -17,15 +18,11 @@ h2 {
   font-size: 16pt;
 }
 
-img {
-  height: 200px;
-}
-
+/* Styling for specific inline spans */
 .author, .date {
   color: #C0B1A2;
   font-size: 12pt;
   font-weight: lighter;
-
 }
 
 .verb {
@@ -33,86 +30,104 @@ img {
   text-transform: uppercase;
 }
 
+
+/* Recipe Ingredients Styling */
+div.recipeIngredients {
+   vertical-align : top;
+   display: inline-block;
+   max-width: 300px;
+   margin: 5px 20px 5px 5px;
+}
+
 .recipeIngredients li {
   font-weight: bold;
 }
 
-footer {
+div.recipeIngredients h2 {
+  border-bottom : 2px dotted #F9B678;
+}
+
+
+/* Recipe Directions Styling */
+div.recipeDirections {
+   vertical-align : top;
+   display: inline-block;
+   max-width: 445px;
+   margin: 5px 5px 5px 5px;
+}
+
+div.recipeDirections h2 {
+  border-bottom : 2px dotted #F9B678;
+}
+
+
+/* Recipe Summary Styling: Table and Image */
+.RecipeImageTable {
   text-align: center;
-  font-size: 9pt;
-  color: #C1C1C1;
+}
+
+img {
+  height: 200px;
+  display: inline-block;
 }
 
 table.recipeSummary {
+  display: inline-block;
+  border-spacing : 0;
+}
 
+.recipeSummary tr {
+   height: 50px;
 }
 
 .recipeSummary td {
   color: white;
   font-size: 12pt;
   text-align: right;
+  padding: 10px 10px 10px 10px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .recipeSummary th {
   color: #6e6e6e;
+  font-size: 12pt;
   text-align: left;
+  padding: 10px 10px 10px 10px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .recipeSummary tr:nth-child(1) {
   background-color: #F39C12;
-  padding: 50px;
-   width: 200px;
-   height: 50px;
-   margin:0%;
-   border-right: 0px;
 }
 
 .recipeSummary tr:nth-child(2) {
   background-color: #F4D03F;
-  padding: 50px;
-   width: 200px;
-   height: 50px;
-   margin:0%;
 }
 
 .recipeSummary tr:nth-child(3) {
   background-color: #ABEBC6;
-  padding: 50px;
-   width: 200px;
-   height: 50px;
-   margin:0%;
 }
 
 .recipeSummary tr:nth-child(4) {
   background-color: #ABB2B9;
-  padding: 50px;
-   width: 200px;
-   height: 50px;
-   margin:0%;
 }
 
-.flex-container {
-  display : flex;
-  vertical-align: middle;
-  /*align-items: baseline;
-  //flex-direction: row;*/
-  }
+/* Footer Styling */
+footer {
+  text-align: center;
+  font-size: 9pt;
+  color: #C1C1C1;
+  margin-top : 30px;
+}
 
-  .container3 {
-    display : flex;
-  align-items: baseline;
-  flex-direction: row;
-  }
+/* Recipe Note Styling */
+div.recipeNotes {
+   margin : 5px;
+}
 
-  .dotborder {
-    border-top: 1px dashed #F9B678;
-  }
+/* CSS trick to create colored numbers for ol for the recipe directions */
 
-  .container2 {
-  height: 200px;
-  display : flex;
-  align-items: center;
-  flex-direction: row;
-  
-  }
+
 
